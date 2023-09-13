@@ -1,0 +1,182 @@
+html {
+    font-size: 62.5%;
+
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(/src/images/bg-desktop.svg) center center no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    max-height: 100vh;
+    margin: 0 auto;
+
+}
+
+
+.header img {
+    width: 350px;
+    padding: 35px;
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main .mockups img {
+    width: 900px;
+    margin-left: 30px;
+    margin-top: 100px;
+
+}
+
+.main .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 10px;
+
+}
+
+.main .info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4.2rem;
+    color: white;
+}
+
+.main .info p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.info .btn-register {
+    background-color: #fff;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.info a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social {
+    font-size: 1.8rem;
+    margin-right: 60px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.social .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .icons a:hover {
+    color: hsl(300, 69%, 71%);
+
+}
+
+
+@media (max-width: 1440px) {
+
+    .main .mockups img {
+        width: 750px;
+        margin-top: 50px;
+        margin-left: 100px;
+        
+    }
+}
+
+@media (max-width: 1250px) {
+    .main .mockups img {
+        width: 600px;
+        margin-top: 80px;
+    }
+
+    .main .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .main .info p {
+        font-size: 1.6rem;
+    }
+
+    .header img{
+        width: 230px;
+    }
+
+    .social{
+        margin-right: 20px;
+    }
+    
+   }
+
+@media (max-width: 475px){
+    body{
+        background: url(/src/images/bg-mobile.svg)  no-repeat;
+        background-size: contain;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column
+    }
+    .main .mockups img{
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .main .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social .icons{
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+}
